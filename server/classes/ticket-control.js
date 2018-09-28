@@ -7,9 +7,7 @@ class Ticket {
         this.escritorio = escritorio;
 
     }
-
 }
-
 
 class TicketControl {
 
@@ -64,7 +62,7 @@ class TicketControl {
 
         let atenderTicket = new Ticket(numeroTicket, escritorio);
 
-        this.ultimos4.unshift(atenderTicket);
+        this.ultimos4.unshift(atenderTicket); //inserta al inicio de el array 'ultimos4'
 
         if (this.ultimos4.length > 4) {
             this.ultimos4.splice(-1, 1); //borra el útlimo elemento
